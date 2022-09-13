@@ -833,8 +833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotationSpeed: 50
-  verticalInput: 0
-  horizontalInput: 0
+  centerOfMass: {fileID: 825415029}
 --- !u!1 &899755176
 GameObject:
   m_ObjectHideFlags: 0

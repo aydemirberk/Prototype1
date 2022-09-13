@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
 {
-    public float speed;
-    public float rotationSpeed;
-    public float verticalInput;
-    public float horizontalInput;
-    public Rigidbody playerRb;
-    [SerializeField] GameObject centerOfMass;
 
-    // Start is called before the first frame update
+    [SerializeField] float speed;
+    [SerializeField] float rotationSpeed;
+    float verticalInput;
+    float horizontalInput;
+    Rigidbody playerRb;
+    [SerializeField]GameObject centerOfMass;
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         playerRb.centerOfMass = centerOfMass.transform.position;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         // get the user's vertical input
